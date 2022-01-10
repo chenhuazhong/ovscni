@@ -51,7 +51,14 @@ kubernetes network  ovs plugin  demo
     
     systemctl enable openvswitch
     systemctl start openvswitch
+    
+    创建一个网桥
+    ovs-vsctl add-br  ovs-br0
+  
+    ifconfig ens37  up
 
+    将 物理网卡ens37 接到 ovs 端口
+    ovs-vsctl  add-port ovs-br0 ens37
     
     开启 交换机的 stp 生成树协议  防止二层环路
     
