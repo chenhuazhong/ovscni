@@ -1,0 +1,6 @@
+apiVersion: ovscni.github.com/v1
+kind: IP
+metadata:
+  name: ip-sample
+spec:
+  # TODO(user): Add fields here

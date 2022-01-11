@@ -1,0 +1,25 @@
+domain: github.com
+layout:
+- go.kubebuilder.io/v3
+projectName: test
+repo: github.com/chenhuazhong/ovscni
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: github.com
+  group: ovscni
+  kind: IP
+  path: github.com/chenhuazhong/ovscni/api/v1
+  version: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: github.com
+  group: ovscni
+  kind: Subnet
+  path: github.com/chenhuazhong/ovscni/api/v1
+  version: v1
+version: "3"
